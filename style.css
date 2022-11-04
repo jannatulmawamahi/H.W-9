@@ -1,0 +1,122 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:"open sans",sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:1179px;
+    margin:auto;
+}
+nav{
+    background: #02918b;
+}
+.container{
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+}
+.menu{
+    width:80%;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.menu ul li a{
+    color:#fff;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: inline-block;
+    
+}
+.menu ul li:hover a{
+    background-color:black;
+}
+#banner{
+    background:url(banner.jpg);
+    height:730px;
+    background-size:cover;
+   position:relative ;
+   z-index: 1;
+   
+   
+   
+}
+#banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top:0;
+    left:0;
+    opacity: 34%;
+    z-index: -1;
+    position: absolute;
+} 
+#banner .container{
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color:purple; */
+    text-align: center
+}
+/* #banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top:0;
+    left:0;
+    opacity: 34%;
+    z-index: -1;
+} */
+#banner .content h5 {
+    font-size: 30px;
+    font-weight: 400;
+    color:#fff ;
+}
+#banner .content h1{
+    font-size: 68px;
+    font-weight: 800;
+    color:#fff ;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .content p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#fff;
+}
+#banner .content a{
+        font-size: 14px;
+        font-weight: 800;
+        color:#fff ;
+        text-transform: uppercase;
+        background-color: #cfc91d;
+        padding:22px 11px;
+    }
+#banner .content img{
+    display: block;
+    margin: 50px auto;
+}
+
+    
